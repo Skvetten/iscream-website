@@ -1,4 +1,5 @@
-URL to coursework3: http://folk.ntnu.no/serenapa/coursework3/index.html
+The Javascript part was made by my web coding teacher as we did not learn any JS for this course.
+The color scheme and theme was set by the teacher.
 
 I choose to make a folder for each part of the website besides the main page which has the Html and css file 
 (some of the styles on that file are also for the other pages ) in the root folder. This way it is clear which
