@@ -1,0 +1,80 @@
+body {
+    background-image: url(../assets/pexels-photo-417049.jpeg)
+}
+
+#reservationsform>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#reservationsform {
+    padding: 5px 20px;
+    display: block;
+    width: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+
+h1 {
+    color: orange;
+}
+
+input {
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    width: 40%;
+    margin: 10px;
+}
+
+textarea {
+    resize: none;
+    width: 60%;
+    border-radius: 5px;
+}
+
+label {
+    display: inline-block;
+    align-self: center;
+}
+
+#party {
+    margin: 0 10px 0 0;
+}
+
+#party input {
+    width: 40px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.partyflex {
+    display: flex;
+}
+
+.partyflex label {
+    display: block;
+    margin: 5px;
+}
+
+.button {
+    display: block;
+    margin: 10px auto;
+}
+
+/*removing the floating icon on the reservation page because it would be in the way of the inputs */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: none;
+    }
+    figure {
+        display: none;
+    }
+    #reservationsform {
+        max-width: 80%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+}

@@ -1,0 +1,182 @@
+body {
+    background: url("assets/pexels-photo-211358.jpeg") no-repeat, #363636;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.home {
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5%;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+/* font face use in the nav bar h1 and "reservations" on the reservation page*/
+
+@font-face {
+    font-family: "Chilling Sabrina";
+    src: url("assets/Chilling\ Sabrina.ttf")
+}
+
+h1 {
+    text-align: center;
+    font-family: "Chilling Sabrina";
+    color: #A10416;
+    font-size: 3em;
+}
+
+/*style of the navbar*/
+
+.navbar {
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 65%;
+    text-align: center;
+}
+
+.navtext {
+    text-decoration: none;
+    font-family: "Chilling Sabrina";
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.2s ease-in-out;
+}
+
+.home-icon {
+    background: url("assets/cauldron.svg") no-repeat center center;
+    background-size: contain;
+    width: 20px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.navtext:hover,
+.navtext:active {
+    color: black;
+}
+
+.home-icon:hover,
+.home-icon:active {
+    background-color: rgba(145, 20, 34, 0.7);
+    border-radius: 50px;
+}
+
+.nav-item {
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 5px;
+}
+
+/*change of the size of the nav bar for the 3 pages, main page excluded*/
+
+.wide {
+    width: auto;
+}
+
+/* style of texts and contrainers throughout the different pages of the website*/
+
+p,
+form,
+ul,
+address {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.navbar,
+#reservationsform,
+.schedule {
+    background: rgba(161, 4, 22, 0.6);
+}
+
+/*style of texts and form containers*/
+
+.flexbox {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.flexitem {
+    background: linear-gradient(rgba(54, 54, 54, 0.7), rgba(54, 54, 54, 0.4));
+    border-radius: 5px 5px 10px 10px;
+    width: 30%;
+    padding: 10px;
+    margin: 20px;
+}
+
+.flexitem p {
+    margin: 5px 0;
+}
+
+/* favorite dessert form the menu form style  */
+
+form {
+    border-radius: 5px;
+}
+
+form legend {
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    margin: 5px;
+}
+
+fieldset {
+    border: none;
+}
+
+.submit {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/*floating icon style and animation that is present on every pages */
+
+#brainfloat {
+    width: 3.5em;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    animation: floating 1s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%,
+    100% {
+        bottom: 5%;
+    }
+    50% {
+        bottom: 10%;
+    }
+}
+
+/* responsive design for 600px and less screens specific to the main page */
+
+@media screen and (max-width:600px) {
+    body {
+        background-image: none;
+    }
+    div.navbar {
+        width: 100%;
+        margin: 0;
+    }
+    div.flexitem {
+        width: 80%;
+        background: rgba(145, 20, 34, 0.7);
+    }
+    #reservationsform {
+        width: 80%;
+    }
+}

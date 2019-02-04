@@ -1,0 +1,74 @@
+body {
+    background-image: url(../assets/pexels-photo-214334.jpeg);
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Contact info and opening hours style */
+
+div.schedule {
+    width: 400px;
+    text-align: center;
+    margin: 50px 50px 50px 75px;
+    border-radius: 10px;
+}
+
+p {
+    margin-top: 100px;
+    text-decoration: underline;
+}
+
+ul {
+    text-align: start;
+    margin: 5px 0 5px 100px;
+}
+
+address {
+    margin-top: 50px;
+}
+
+.contactinfo {
+    color: black;
+    margin: 20px;
+}
+
+.contactinfo:hover {
+    font-weight: bold;
+}
+
+/* Google map style */
+
+iframe {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 50px 50px 50px 200px;
+}
+
+/* responsive design for 600px and less screens specific to the contact page  removed the floating icon
+ because it would be in the way of the map */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: none;
+    }
+    div.schedule {
+        width: 90%;
+        margin: 2em;
+    }
+    ul {
+        margin: 0;
+        text-align: center;
+    }
+    iframe {
+        width: 80%;
+        margin: auto;
+    }
+    figure {
+        display: none;
+    }
+}
